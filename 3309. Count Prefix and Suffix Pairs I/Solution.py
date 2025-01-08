@@ -8,15 +8,10 @@ class Solution:
             if word2[:n] == word1 and  word2[(-1*n):] == word1:
                 return True
             return False
-
-        # words = sorted(words, key=len)
-        print(words)
         i, j = 0, 1
         while i < len(words):
-            print
             for l in range(j, len(words)):
                 if isPrefixAndSuffix(words[i], words[l]):
-                    print(words[i], words[l])
                     ans += 1
 
             i+=1
