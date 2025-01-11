@@ -9,26 +9,9 @@ class Solution:
 
         count = 0
     
-        for _, value in chars.items():  # Iterate over key-value pairs
-            if value % 2 != 0:  # Check if the value is odd
+        for _, value in chars.items(): 
+            if value % 2 != 0:  
                 count += 1
-            if count > k:  # Return False if count exceeds k
+            if count > k:  
                 return False
-        
-        return count <= k  
-
-
-        
-
-    #     let count = 0;
-    #     for (let v of Object.entries(map)) {
-    #         if (v[1] % 2 !== 0) {
-    #             count++
-    #         }
-    #         if (count > k) return false;
-    #     }
-
-    #     return count <= k;
-    # };
-    # ```
-            
+        return count <= k
